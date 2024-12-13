@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NaptolRegression]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="test.VerifyProductDisplayedPostSearch">
+        <methods>
+          <include name="verifyProductAreDisplayedForValidSearch"/>
+          <include name="openBrowser"/>
+          <include name="verifyProductNotDisplayedForInvalidSearch"/>
+        </methods>
+      </class> <!-- test.VerifyProductDisplayedPostSearch -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [NaptolRegression] -->
